@@ -1,72 +1,83 @@
 {% extends 'base/base.html' %}
-{% block css %}
+{% block body %}
+
+
+
+
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap-social.css"/>
     <link rel="stylesheet" href="/static/font-awesome-4.2.0/css/font-awesome.min.css"/>
-{% endblock %}
-{% block body %}
+
     <div class="container text-center">
-
-    <div class="row clearfix">
-		<div class="col-md-12 column">
-
-
+        <div class="row">
+            <div class="col-md-12">
                 <h1>Casar Mais Fácil</h1>
-                <p>{% trans %}Inspirações, Dicas, Fornecedores... Tudo em um só lugar!!{% endtrans %}</p>
+                <p>{% trans %}Dicas, Inspirações, Fornecedores... Tudo em um só lugar!!{% endtrans %}</p>
             </div>
         </div>
         <br/>
 
-
+    <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://www.oficinadamoda.com.br/upload/imagens_upload/tratamentos_de_olheiras_para_as_noivas.jpg" />
+						<img alt="300x200" src=\static\img\home\4.jpg />
 						<div class="caption">
-							<h4>
-								Estética para noivas...
-							</h4>
+							<h3>
+								Estética para Noivas
+							</h3>
 							<p>
-								Dicas de como estar com a pele impecável no grande dia
-							</p>
+								Dicas de como estar com a pele impecável no grande dia.
+                            </p>
 							<p>
-								<a class="btn btn-primary" href="#">Ler mais</a>
+								<a class="btn btn-primary" href="#">Ver Mais</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://onossocasamento.pt/sites/onossocasamento.pt/files/artigos/tendencias-para-casamento-2011-4.jpg" />
+						<img alt="300x200" src= \static\img\home\2.jpg />
 						<div class="caption">
-							<h4>
-								Tendências 2015...
-							</h4>
+							<h3>
+								Decoração e Tendências 2015
+							</h3>
 							<p>
 								Fique por dentro das tendências de decoração, são opções que valem a pena conferir!!
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Ler mais</a>
+								<a class="btn btn-primary" href="#">Ver Mais</a>
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://www.nosvamoscasar.com.br/blog/wp-content/uploads/2014/04/Dicas-para-a-lua-de-mel.jpg" />
+						<img alt="300x200" src= \static\img\home\3.jpg />
 						<div class="caption">
-							<h4>
-								Lua de mel...
-							</h4>
+							<h3>
+								Lua de Mel
+							</h3>
 							<p>
 								E aí!? Já sabe onde vai passar sua Lua de Mel? Confira nossas dicas!!
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Ler mais</a>
+								<a class="btn btn-primary" href="#">Ver Mais</a>
 							</p>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-        </div>
+
     </div>
+
+
+
+
+
 {% endblock %}

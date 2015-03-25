@@ -53,14 +53,14 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 {% macro select_tab(tab='') %}
-                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Cadastrar{% endtrans %}</a>
-                     <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Vestidos{% endtrans %}</a>
-                      <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Noivo{% endtrans %}</a>
-                       <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Buffet{% endtrans %}</a>
-                        <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Decoração{% endtrans %}</a>
-                         <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}DIY{% endtrans %}</a>
-                          <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Casamentos Reais{% endtrans %}</a>
-                           <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/courses">{% trans %}Convites{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/cadastro/cadastro">{% trans %}Cadastrar{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/vestidos/vestidos">{% trans %}Vestidos{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/noivo/noivo">{% trans %}Noivo{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/buffet/buffet">{% trans %}Buffet{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/decoracao/decoracao">{% trans %}Decoração{% endtrans %}</a>
+                   <!-- <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/diy/diy">{% trans %}DIY{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/casamentosreais/casamentosreais">{% trans %}Casamentos Reais{% endtrans %}</a>
+                    <li {{ 'class="active"' | safe if tab=='Login' }}><a href="/convites/convites">{% trans %}Convites{% endtrans %}</a> -->
 
                     </li>
                     {% if _logged_user and 'ADMIN' in _logged_user.groups %}
